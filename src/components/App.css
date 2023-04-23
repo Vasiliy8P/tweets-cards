@@ -1,0 +1,39 @@
+.Container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 8px 0;
+    margin-bottom: 16px;
+    border-bottom: 1px solid black;
+}
+
+.Main-nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.Nav-item {
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: black;
+    font-weight: 500;
+
+    
+}
+
+.Nav-item :hover {
+    color: orangered;
+}
+
+.Nav-item__link {
+    text-decoration: none;
+    color: black;
+}
