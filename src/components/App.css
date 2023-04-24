@@ -9,9 +9,13 @@
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    padding: 8px 0;
+    padding: 5px 0;
     margin-bottom: 16px;
     border-bottom: 1px solid black;
+}
+
+.Header__nav {
+    height: 50px;
 }
 
 .Main-nav {
@@ -24,13 +28,16 @@
     padding: 8px 16px;
     border-radius: 4px;
     color: black;
-    font-weight: 500;
-
-    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #373737;    
 }
 
 .Nav-item :hover {
-    color: orangered;
+    color: #5CD3A8;
 }
 
 .Nav-item__link {
