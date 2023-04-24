@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { nanoid } from 'nanoid';
-import { getTweetsApi } from 'services/api';
+import { getDecrementFollowersApi, getIncrementFollowersApi, getTweetsApi } from 'services/api';
 import TweetCard from 'components/TweetsCard/TweetsCard';
 import './Tweets.css';
 
@@ -20,6 +20,35 @@ const Tweets = () => {
             .catch(error => console.log(error.message));
     }, [page]); 
 
+    const incrementFollowers = (tweetId, tweetFollowers) => {
+        getIncrementFollowersApi(tweetId, tweetFollowers)
+            .then(fetchTweet => {
+                setTweets(prevTweets => prevTweets.map(prevTweet => {
+                    if (prevTweet.id === fetchTweet.id) {
+                        prevTweet.followers = fetchTweet.followers;
+                    };
+                    return prevTweet
+                })
+                )
+            })                
+            .catch(error => console.log(error.message));
+    }
+
+    const decrementFollowers = (tweetId, tweetFollowers) => {
+        getDecrementFollowersApi(tweetId, tweetFollowers)
+            .then(fetchTweet => {
+                console.log(fetchTweet)
+                setTweets(prevTweets => prevTweets.map(prevTweet => {
+                    if (prevTweet.id === fetchTweet.id) {
+                        prevTweet.followers = fetchTweet.followers;
+                    };
+                    return prevTweet;
+                })
+                )
+            })                
+            .catch(error => console.log(error.message));
+    }
+
     const hendleClickBtn = () => {
         setPage(prevState => (prevState + 1));
     }
@@ -29,7 +58,10 @@ const Tweets = () => {
             <ul className='Tweets-list'>
                 {tweets.map(tweet => (
                     <li key={nanoid()} >
-                        <TweetCard tweet={tweet} />
+                        <TweetCard
+                            tweet={tweet}
+                            onIncrementFollowers={incrementFollowers}
+                            onDecrementFollowers={decrementFollowers} />
                     </li>
                 ))}
             </ul>
