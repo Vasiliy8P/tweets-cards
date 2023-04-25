@@ -1,26 +1,96 @@
 .TweetCard {
+    position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 380px;
     height: 460px;
+    /* margin-bottom: 20px; */
     background: linear-gradient(114.99deg, #471CA9 -0.99%, #5736A3 54.28%, #4B2A99 78.99%);
     box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
     border-radius: 20px;
 }
 
-.TweetCard__container {
+/* .TweetCard__container {
     padding: 20px;
+} */
+
+/* .TweetCard-info {
+    position: relative;
+
+} */
+
+.TweetCard__picture {
+    position: absolute;
+    top: 28px;
+    left: 36px;
+    width: 308px;
+    height: 168px;
+    z-index: 1;
 }
 
-.TweetCard__header {
-    height: 214px;
+.TweetCard__logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
 }
 
-.TweetCard__tweets-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
+.TweetCard__rectangle {
+    position: absolute;
+    top: 214px;
+    left: 0;
+    width: 380px;
+    height: 8px;
+    z-index: 1;
+}
+
+.TweetCard__user-photo {
+    position: absolute;
+    width: 62px;
+    height: 62px;    
+    top: 187px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.TweetCard__ellipse {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 178px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.TweetCard__tweets-counter {
+    margin-top: 284px;
+    margin-bottom: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #EBD8FF;
+    /* text-align: center; */
+}
+
+.TweetCard__followers-counter {
+    margin-top: 16;
+    margin-bottom: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #EBD8FF;
+    /* text-align: center; */
 }
 
 .TweetCard__btn-follow {
@@ -31,10 +101,14 @@
     width: 196px;
     height: 50px;
     padding: 14px 39px;
+    margin-top: 26px;
+    /* margin-left: auto;
+    margin-right: auto; */
 
     background: #EBD8FF;
     box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
     border-radius: 10.3108px;
+    border: 0;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -52,11 +126,15 @@
     align-items: center; 
     width: 196px;
     height: 50px;
-    padding: 14px 39px;     
+    padding: 14px 39px;    
+    margin-top: 26px;
+    /* margin-left: auto;
+    margin-right: auto; */
     
     background: #5CD3A8;
     box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
     border-radius: 10.3108px;
+    border: 0;
     
     font-family: 'Montserrat';
     font-style: normal;

@@ -1,24 +1,21 @@
-// import { useEffect, useState } from 'react';
 import './TweetCard.css';
 
 const TweetCard = ({
-    tweet: { user, tweets, followers, id },
+    tweet: { tweets, followers, id, avatar },
     followingTweetsId,
     onClickFollowing
 }) => {
     return (
         <div className="TweetCard">
-            <div className="TweetCard__container">
-                <div className="TweetCard__header">
-                    <img className="TweetCard__logo" src="logo" alt="logo" />
-                </div>
-                <div className="TweetCard__user">
-                    <p>{user}</p>
-                    <img className="TweetCard__user-photo" src="user" alt="user" />
-                </div>
-                <div className="TweetCard__tweets-info">
-                    <p className="TweetCard__tweets-counter"> {tweets} TWEETS</p>
-                    <p className="TweetCard__followers-counter"> {followers} FOLLOWERS</p>
+            {/* <div className="TweetCard__container">
+                <div className="TweetCard-info">      */}
+                    <img className="TweetCard__picture" src="../img/picture2.png" alt="background-img" />
+                    <img className="TweetCard__logo" src="../img/LogoJPG.jpg" alt="logo" />
+                    <img className="TweetCard__rectangle" src="../img/rectangle.png" alt="rectangle" />
+                    <img className="TweetCard__user-photo" src={avatar} alt="user" />
+                    <img className="TweetCard__ellipse" src="../img/ellipse.png" alt="ellipse" />
+                    <p className="TweetCard__tweets-counter"> {tweets} tweets</p>
+                    <p className="TweetCard__followers-counter"> {followers} followers</p>
                     <button
                         className={
                             followingTweetsId.includes(id)
@@ -29,8 +26,8 @@ const TweetCard = ({
                     >
                         {followingTweetsId.includes(id) ? "following" : "Follow"}
                     </button>
-                </div>
-            </div>
+                {/* </div>
+            </div> */}
         </div>
     )
 };

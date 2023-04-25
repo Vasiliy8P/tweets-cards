@@ -35,7 +35,7 @@ const Tweets = () => {
 
     useEffect(() => {
         localStorage.setItem("followingTweets", JSON.stringify(followingTweetsId));
-    });
+    }, [followingTweetsId]);
 
     const incrementFollowers = (tweetId, tweetFollowers) => {
         getIncrementFollowersApi(tweetId, tweetFollowers)
@@ -80,24 +80,22 @@ const Tweets = () => {
 
     return (
         <>  <Link to={backLinkHref} className='Tweets-list__btn-back-link'>
-                <button className='Tweets-list__btn-back' type='button'>
-                    Back
-                </button>
-            </Link>              
+            <button className='Tweets-list__btn-back' type='button'>
+                Back
+            </button>
+        </Link>
             <ul className='Tweets-list'>
-                {isLoading
-                    ? <Loader />
-                    : (tweets.map(tweet => (
-                        <li key={nanoid()} className='Tweets-list__item'>
-                            <TweetCard
-                                tweet={tweet}
-                                onClickFollowing={hendleClickFollowing}
-                                followingTweetsId={followingTweetsId}
-                            />
-                        </li>
-                    )))
-                }
+                {(tweets.map(tweet => (
+                    <li key={nanoid()} className='Tweets-list__item'>
+                        <TweetCard
+                            tweet={tweet}
+                            onClickFollowing={hendleClickFollowing}
+                            followingTweetsId={followingTweetsId}
+                        />
+                    </li>
+                )))}
             </ul>
+            {isLoading && <Loader />}
             {(tweets.length > 0) && !isLoading &&
                 <button
                     className='Tweets-list__btn-LoadMore'
