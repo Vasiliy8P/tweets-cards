@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/tweets-cards/static/css/main.7cba3ab2.css",
-    "main.js": "/tweets-cards/static/js/main.1df0abca.js",
+    "main.js": "/tweets-cards/static/js/main.ce0233f9.js",
     "static/css/474.05347af9.chunk.css": "/tweets-cards/static/css/474.05347af9.chunk.css",
     "static/js/474.fd6ccea8.chunk.js": "/tweets-cards/static/js/474.fd6ccea8.chunk.js",
     "static/css/530.417b6ff1.chunk.css": "/tweets-cards/static/css/530.417b6ff1.chunk.css",
-    "static/js/530.f68a629e.chunk.js": "/tweets-cards/static/js/530.f68a629e.chunk.js",
+    "static/js/530.3a813e99.chunk.js": "/tweets-cards/static/js/530.3a813e99.chunk.js",
     "static/css/584.2e2dbfee.chunk.css": "/tweets-cards/static/css/584.2e2dbfee.chunk.css",
     "static/js/584.44a4079a.chunk.js": "/tweets-cards/static/js/584.44a4079a.chunk.js",
     "static/media/picture.png": "/tweets-cards/static/media/picture.6c52ceea786ad6626067.png",
     "static/media/ellipse.png": "/tweets-cards/static/media/ellipse.37cba8cb5464b5b7f587.png",
     "index.html": "/tweets-cards/index.html",
     "main.7cba3ab2.css.map": "/tweets-cards/static/css/main.7cba3ab2.css.map",
-    "main.1df0abca.js.map": "/tweets-cards/static/js/main.1df0abca.js.map",
+    "main.ce0233f9.js.map": "/tweets-cards/static/js/main.ce0233f9.js.map",
     "474.05347af9.chunk.css.map": "/tweets-cards/static/css/474.05347af9.chunk.css.map",
     "474.fd6ccea8.chunk.js.map": "/tweets-cards/static/js/474.fd6ccea8.chunk.js.map",
     "530.417b6ff1.chunk.css.map": "/tweets-cards/static/css/530.417b6ff1.chunk.css.map",
-    "530.f68a629e.chunk.js.map": "/tweets-cards/static/js/530.f68a629e.chunk.js.map",
+    "530.3a813e99.chunk.js.map": "/tweets-cards/static/js/530.3a813e99.chunk.js.map",
     "584.2e2dbfee.chunk.css.map": "/tweets-cards/static/css/584.2e2dbfee.chunk.css.map",
     "584.44a4079a.chunk.js.map": "/tweets-cards/static/js/584.44a4079a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7cba3ab2.css",
-    "static/js/main.1df0abca.js"
+    "static/js/main.ce0233f9.js"
   ]
 }
