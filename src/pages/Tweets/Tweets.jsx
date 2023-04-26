@@ -37,7 +37,7 @@ const Tweets = () => {
         localStorage.setItem("followingTweets", JSON.stringify(followingTweetsId));
     }, [followingTweetsId]);
 
-    const incrementFollowers = (tweetId, tweetFollowers) => {
+    const incrementFollowers = (tweetId, tweetFollowers) => {        
         getIncrementFollowersApi(tweetId, tweetFollowers)
             .then(fetchTweet => {
                 setTweets(prevTweets => prevTweets.map(prevTweet => {
