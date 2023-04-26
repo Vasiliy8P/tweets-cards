@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { nanoid } from 'nanoid';
-import bootstrap from 'bootstrap'
+import 'bootstrap/js/dist/dropdown';
 import { getDecrementFollowersApi, getIncrementFollowersApi, getTweetsApi } from 'services/api';
 import TweetsCard from 'components/TweetsCard/TweetsCard';
 import Loader from 'components/Loader/Loader';
