@@ -123,7 +123,7 @@ const Tweets = () => {
                 )))}
             </ul>
             {isLoading && <Loader />}
-            {(tweets.length > 0) && !isLoading &&
+            {(filterTweets.length > 0) && !isLoading &&
                 <button
                     className='Tweets-list__btn-LoadMore'
                     type='button'
