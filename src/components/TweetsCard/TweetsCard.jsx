@@ -17,7 +17,7 @@ const TweetsCard = ({
             <img className="TweetCard__user-photo" src={avatar} alt="user" />
             <img className="TweetCard__ellipse" src={ellipseImg} alt="ellipse" />
             <p className="TweetCard__tweets-counter"> {tweets} tweets</p>
-            <p className="TweetCard__followers-counter"> {followers} followers</p>
+            <p className="TweetCard__followers-counter"> {followers.toLocaleString('en-US')} followers</p>
             <button
                 className={
                     followingTweetsId.includes(id)

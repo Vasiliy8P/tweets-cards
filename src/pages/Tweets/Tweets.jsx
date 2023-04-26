@@ -62,7 +62,7 @@ const Tweets = () => {
                         prevTweet.followers = fetchTweet.followers;
                     };
                     return prevTweet;
-                }))
+                }));
             })
             .catch(error => console.log(error.message));
     };
