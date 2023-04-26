@@ -10,6 +10,45 @@
     margin-bottom: 20px;
 }
 
+.Btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Tweets-list__btn-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 40px;
+    padding: 14px 14px;
+    
+    background-color: #6c757d;;
+    box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+    border-radius: 10.3108px;
+    border: 0;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.Tweets-list__btn-back:hover {
+    background-color: #565e64;
+    cursor: pointer;
+}
+
+.Tweets-list__btn-back-link {
+    display: inline-block;
+    text-decoration: none;  
+}
+
 .Tweets-list__btn-LoadMore {
     display: flex;
     flex-direction: row;
@@ -22,58 +61,33 @@
     margin-right: auto;
     margin-bottom: 50px;
 
-    background-color: darkgray;
+    background-color: #6c757d;
     box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
     border-radius: 10.3108px;
     border: 0;
 
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 22px;
     text-transform: uppercase;
-    color: #373737;
+    color: #fff;
 }
 
 .Tweets-list__btn-LoadMore:hover {
-    background-color: #373737;
-    color: darkgray;
+    background-color: #565e64;
     cursor: pointer;
 }
 
-.Tweets-list__btn-back {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-    height: 40px;
-    padding: 14px 14px;
-    margin-right: auto;
-    margin-bottom: 20px;
-    
-    background-color: darkgray;
-    box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
-    border-radius: 10.3108px;
-    border: 0;
-    
+.dropdown-btn {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 22px;
     text-transform: uppercase;
-    color: #373737;
 }
 
-.Tweets-list__btn-back:hover {
-    background-color: #373737;
-    color: darkgray;
-    cursor: pointer;
-}
 
-.Tweets-list__btn-back-link {
-    display: inline-block;
-    text-decoration: none;  
-}
 
