@@ -1,11 +1,10 @@
-import './TweetCard.css';
 import pictureImg from '../img/picture.png';
 import logoImg from '../img/Logo.png';
 import rectangleImg from '../img/rectangle.png';
 import ellipseImg from '../img/ellipse.png';
+import './TweetsCard.css';
 
-
-const TweetCard = ({
+const TweetsCard = ({
     tweet: { tweets, followers, id, avatar },
     followingTweetsId,
     onClickFollowing
@@ -32,5 +31,5 @@ const TweetCard = ({
         </div>
     )
 };
-export default TweetCard;
+export default TweetsCard;
 

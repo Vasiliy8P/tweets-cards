@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { nanoid } from 'nanoid';
 import { getDecrementFollowersApi, getIncrementFollowersApi, getTweetsApi } from 'services/api';
-import TweetCard from 'components/TweetsCard/TweetsCard';
+import TweetsCard from 'components/TweetsCard/TweetsCard';
 import Loader from 'components/Loader/Loader';
 import './Tweets.css';
 
@@ -80,14 +80,14 @@ const Tweets = () => {
 
     return (
         <>  <Link to={backLinkHref} className='Tweets-list__btn-back-link'>
-            <button className='Tweets-list__btn-back' type='button'>
-                Back
-            </button>
-        </Link>
+                <button className='Tweets-list__btn-back' type='button'>
+                    Back
+                </button>
+            </Link>
             <ul className='Tweets-list'>
                 {(tweets.map(tweet => (
                     <li key={nanoid()} className='Tweets-list__item'>
-                        <TweetCard
+                        <TweetsCard
                             tweet={tweet}
                             onClickFollowing={hendleClickFollowing}
                             followingTweetsId={followingTweetsId}
