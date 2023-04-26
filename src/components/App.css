@@ -16,16 +16,20 @@
 
 .Header__nav {
     height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Main-nav {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     list-style: none;
     padding: 0;
 }
 
 .Nav-item {
-    padding: 8px 16px;
     border-radius: 4px;
     color: black;
     font-style: normal;
@@ -41,6 +45,7 @@
 }
 
 .Nav-item__link {
+    padding: 16px;
     text-decoration: none;
     color: black;
 }
